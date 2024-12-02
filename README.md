@@ -1,8 +1,6 @@
-# React + Vite
+# Trivia Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Trivia Quiz App offers a fun and interactive quiz experience, featuring over 20 categories of quiz questions. 
+Built with React, it utilizes the Trivia API to fetch random quiz questions. 
+Test your knowledge and enjoy exploring various topics with this engaging application.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
