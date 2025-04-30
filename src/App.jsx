@@ -4,7 +4,7 @@ import Header from "./components/Header/Header"
 import Footer from './components/Footer'
 // page content components
 import Home from './pages/Home'
-import About from './pages/About'
+import Quiz from './pages/Quiz'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Category from './pages/Category'
 
@@ -20,9 +20,9 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/quiz" element={<Quiz />} />
       <Route path="/category" element={<Category />} />
-      <Route path="/:selectedId" element={<Home />} />
+      <Route path="/:selectedId" element={<Quiz />} />
     </Routes>
     </div>
     </BrowserRouter>

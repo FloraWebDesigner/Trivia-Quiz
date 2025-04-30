@@ -27,7 +27,7 @@ const handleSubmit = (e) => {
 
 return (
     <section className="container container text-light text-center">
-        <h1 className="my-3">Select a Trivia Category</h1>
+        <h1 className="my-3 text-warning">Select a Trivia Category</h1>
         <form onSubmit={handleSubmit}>
             <div className="categories">
                 {category.map((cat) => (

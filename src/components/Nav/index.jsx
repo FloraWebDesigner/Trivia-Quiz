@@ -21,17 +21,17 @@ export default function Nav() {
         </li>
         <li className="mb-3">
           <NavLink
-            to="/About"
+            to="/quiz"
             className={({ isActive }) =>
               isActive ? styles.active : "text-light"
             }
           >
-            About
+            Quiz
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/Category"
+            to="/category"
             className={({ isActive }) =>
               isActive ? styles.active : "text-light"
             }
