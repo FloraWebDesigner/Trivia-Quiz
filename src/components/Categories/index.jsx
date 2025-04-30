@@ -57,7 +57,7 @@ return (
                     </label>
                 ))}
             </div>
-            <Link to={`/${selectedId}`}>
+            <Link to={`/quiz/${selectedId}`}>
             <button type="submit" className="btn btn-dark w-75 mt-3">
                 Submit
             </button>

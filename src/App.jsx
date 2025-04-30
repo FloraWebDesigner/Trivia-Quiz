@@ -22,7 +22,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/quiz" element={<Quiz />} />
       <Route path="/category" element={<Category />} />
-      <Route path="/:selectedId" element={<Quiz />} />
+      <Route path="/quiz/:selectedId" element={<Quiz />} />
     </Routes>
     </div>
     </BrowserRouter>
