@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { faLayerGroup, faArrowTurnUp } from "@fortawesome/free-solid-svg-icons";
+import { faLayerGroup, faArrowTurnUp,faRotate } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Answer from "../Answer/Index";
@@ -36,7 +36,7 @@ export default function Trivia() {
         }
     };
     getQuestion();
-  }, [selectedId]); // the empty square brackets are for your dependency array (any object, varibale, etc. in there will cause the effect to run again if they change). If you want the effect to only run once (i.e. when the component first renders), then use empty square brackets (no dependencies)
+  }, [selectedId]); 
   let triviaCategory = category ? `Category: ${category}` : "";
   let triviaDifficulty = difficulty ? `Level: ${difficulty}` : "";
   let triviaQuestion = question || "Loading the question";
@@ -119,7 +119,15 @@ export default function Trivia() {
             value={result.valueOfAnswer}
           />
         )}
-        {revealed && <h3 className="text-warning mt-2">{traviaAnswer}</h3>}
+        {revealed && 
+        <div>
+        <h3 className="text-warning mt-2 mb-3">{traviaAnswer}</h3>
+        <button className="btn btn-secondary mb-5 flex flex-row" onClick={() => setTimeout(() => window.location.reload(), 100)} >       
+        Play Again
+        <FontAwesomeIcon icon={faRotate} className="ms-2"/>
+      </button>
+      </div>
+        }
       </div>
     </section>
   );

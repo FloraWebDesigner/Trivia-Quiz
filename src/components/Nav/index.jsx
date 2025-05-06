@@ -19,17 +19,8 @@ export default function Nav() {
             Home
           </NavLink>
         </li>
+        
         <li className="mb-3">
-          <NavLink
-            to="/quiz"
-            className={({ isActive }) =>
-              isActive ? styles.active : "text-light"
-            }
-          >
-            Quiz
-          </NavLink>
-        </li>
-        <li>
           <NavLink
             to="/category"
             className={({ isActive }) =>
@@ -37,6 +28,16 @@ export default function Nav() {
             }
           >
             Category
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/quiz"
+            className={({ isActive }) =>
+              isActive ? styles.active : "text-light"
+            }
+          >
+            Quiz
           </NavLink>
         </li>
       </ul>

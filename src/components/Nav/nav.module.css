@@ -28,7 +28,7 @@ li {
     color: white;
     background-color: #6c757d !important;
     background-clip: padding-box !important;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     display: block;
     width: 100%;
   }
